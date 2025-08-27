@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
-import TaskList from "./components/TaskList";
+axios.get(`${import.meta.env.VITE_API_URL}/tasks`)
+axios.post(`${import.meta.env.VITE_API_URL}/tasks`, {...})
+axios.put(`${import.meta.env.VITE_API_URL}/tasks/${id}`, {...})
+axios.delete(`${import.meta.env.VITE_API_URL}/tasks/${id}`)import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 
 export default function App() {

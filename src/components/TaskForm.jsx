@@ -1,6 +1,8 @@
 import { useState } from "react";
-import axios from "axios";
-
+axios.get(`${import.meta.env.VITE_API_URL}/tasks`)
+axios.post(`${import.meta.env.VITE_API_URL}/tasks`, {...})
+axios.put(`${import.meta.env.VITE_API_URL}/tasks/${id}`, {...})
+axios.delete(`${import.meta.env.VITE_API_URL}/tasks/${id}`)
 export default function TaskForm({ setTasks }) {
   const [title, setTitle] = useState("");
 
